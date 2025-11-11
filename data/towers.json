@@ -1,0 +1,344 @@
+{
+  "towers": [
+    {
+      "id": "archer",
+      "name": "Archer",
+      "description": "Basic ranged tower that shoots arrows at enemies",
+      "cost": 50,
+      "damage": 10,
+      "range": 150,
+      "attackSpeed": 1.5,
+      "radius": 12,
+      "color": "#00ff00",
+      "projectileType": "normal",
+      "upgradeMultiplier": {
+        "damage": 1.2,
+        "range": 1.1,
+        "speed": 1.15
+      }
+    },
+    {
+      "id": "mage",
+      "name": "Mage",
+      "description": "Magical tower dealing area damage",
+      "cost": 75,
+      "damage": 15,
+      "range": 200,
+      "attackSpeed": 1.0,
+      "radius": 12,
+      "color": "#ff00ff",
+      "projectileType": "magic",
+      "upgradeMultiplier": {
+        "damage": 1.25,
+        "range": 1.15,
+        "speed": 1.1
+      }
+    },
+    {
+      "id": "cannon",
+      "name": "Cannon",
+      "description": "Heavy artillery with high damage but slow fire rate",
+      "cost": 100,
+      "damage": 30,
+      "range": 200,
+      "attackSpeed": 0.5,
+      "radius": 14,
+      "color": "#ffaa00",
+      "projectileType": "normal",
+      "upgradeMultiplier": {
+        "damage": 1.3,
+        "range": 1.1,
+        "speed": 1.2
+      }
+    },
+    {
+      "id": "ice_tower",
+      "name": "Ice Tower",
+      "description": "Slows enemies while dealing moderate damage",
+      "cost": 85,
+      "damage": 8,
+      "range": 160,
+      "attackSpeed": 1.2,
+      "radius": 12,
+      "color": "#00ccff",
+      "projectileType": "ice",
+      "upgradeMultiplier": {
+        "damage": 1.15,
+        "range": 1.2,
+        "speed": 1.1
+      }
+    },
+    {
+      "id": "fire_tower",
+      "name": "Fire Tower",
+      "description": "Deals extra damage and can burn enemies",
+      "cost": 80,
+      "damage": 12,
+      "range": 140,
+      "attackSpeed": 1.3,
+      "radius": 12,
+      "color": "#ff6600",
+      "projectileType": "fire",
+      "upgradeMultiplier": {
+        "damage": 1.25,
+        "range": 1.1,
+        "speed": 1.15
+      }
+    },
+    {
+      "id": "laser_tower",
+      "name": "Laser Tower",
+      "description": "Fires fast beams with guaranteed hits",
+      "cost": 120,
+      "damage": 18,
+      "range": 250,
+      "attackSpeed": 2.0,
+      "radius": 11,
+      "color": "#ff0000",
+      "projectileType": "laser",
+      "upgradeMultiplier": {
+        "damage": 1.2,
+        "range": 1.15,
+        "speed": 1.25
+      }
+    },
+    {
+      "id": "poison_tower",
+      "name": "Poison Tower",
+      "description": "Applies poison damage over time",
+      "cost": 90,
+      "damage": 6,
+      "range": 130,
+      "attackSpeed": 1.8,
+      "radius": 11,
+      "color": "#00ff00",
+      "projectileType": "poison",
+      "upgradeMultiplier": {
+        "damage": 1.3,
+        "range": 1.1,
+        "speed": 1.2
+      }
+    },
+    {
+      "id": "sniper",
+      "name": "Sniper Tower",
+      "description": "Very high damage, very slow, extreme range",
+      "cost": 150,
+      "damage": 50,
+      "range": 400,
+      "attackSpeed": 0.3,
+      "radius": 10,
+      "color": "#ffff00",
+      "projectileType": "normal",
+      "upgradeMultiplier": {
+        "damage": 1.35,
+        "range": 1.2,
+        "speed": 1.3
+      }
+    },
+    {
+      "id": "tesla",
+      "name": "Tesla Tower",
+      "description": "Shoots lightning that chains between enemies",
+      "cost": 110,
+      "damage": 14,
+      "range": 170,
+      "attackSpeed": 1.4,
+      "radius": 12,
+      "color": "#ffff00",
+      "projectileType": "lightning",
+      "upgradeMultiplier": {
+        "damage": 1.2,
+        "range": 1.15,
+        "speed": 1.2
+      }
+    },
+    {
+      "id": "frost_nova",
+      "name": "Frost Nova",
+      "description": "Freezes all nearby enemies temporarily",
+      "cost": 130,
+      "damage": 5,
+      "range": 180,
+      "attackSpeed": 0.8,
+      "radius": 12,
+      "color": "#00eeff",
+      "projectileType": "ice",
+      "upgradeMultiplier": {
+        "damage": 1.15,
+        "range": 1.25,
+        "speed": 1.1
+      }
+    },
+    {
+      "id": "inferno",
+      "name": "Inferno",
+      "description": "Creates explosive flames in a large area",
+      "cost": 140,
+      "damage": 25,
+      "range": 200,
+      "attackSpeed": 0.7,
+      "radius": 13,
+      "color": "#ff4400",
+      "projectileType": "fire",
+      "upgradeMultiplier": {
+        "damage": 1.3,
+        "range": 1.2,
+        "speed": 1.15
+      }
+    },
+    {
+      "id": "sonic_boom",
+      "name": "Sonic Boom",
+      "description": "High speed bullets with moderate damage",
+      "cost": 70,
+      "damage": 9,
+      "range": 160,
+      "attackSpeed": 2.2,
+      "radius": 10,
+      "color": "#aaaaff",
+      "projectileType": "normal",
+      "upgradeMultiplier": {
+        "damage": 1.18,
+        "range": 1.1,
+        "speed": 1.3
+      }
+    },
+    {
+      "id": "thorn_spike",
+      "name": "Thorn Spike",
+      "description": "Damages nearby enemies periodically",
+      "cost": 55,
+      "damage": 7,
+      "range": 100,
+      "attackSpeed": 1.0,
+      "radius": 11,
+      "color": "#88ff00",
+      "projectileType": "normal",
+      "upgradeMultiplier": {
+        "damage": 1.2,
+        "range": 1.1,
+        "speed": 1.1
+      }
+    },
+    {
+      "id": "dark_ritual",
+      "name": "Dark Ritual",
+      "description": "Converts enemy health into towers' damage",
+      "cost": 135,
+      "damage": 11,
+      "range": 120,
+      "attackSpeed": 1.1,
+      "radius": 12,
+      "color": "#6600ff",
+      "projectileType": "normal",
+      "upgradeMultiplier": {
+        "damage": 1.25,
+        "range": 1.05,
+        "speed": 1.15
+      }
+    },
+    {
+      "id": "windmill",
+      "name": "Windmill",
+      "description": "Cheap tower with consistent performance",
+      "cost": 40,
+      "damage": 6,
+      "range": 110,
+      "attackSpeed": 1.6,
+      "radius": 10,
+      "color": "#ccccff",
+      "projectileType": "normal",
+      "upgradeMultiplier": {
+        "damage": 1.15,
+        "range": 1.1,
+        "speed": 1.2
+      }
+    },
+    {
+      "id": "orbital_cannon",
+      "name": "Orbital Cannon",
+      "description": "Precision fire from above with moderate splash",
+      "cost": 145,
+      "damage": 28,
+      "range": 280,
+      "attackSpeed": 0.6,
+      "radius": 12,
+      "color": "#ffaa00",
+      "projectileType": "normal",
+      "upgradeMultiplier": {
+        "damage": 1.28,
+        "range": 1.18,
+        "speed": 1.2
+      }
+    },
+    {
+      "id": "mirror_shield",
+      "name": "Mirror Shield",
+      "description": "Reflects projectiles back to enemies",
+      "cost": 100,
+      "damage": 8,
+      "range": 90,
+      "attackSpeed": 0.5,
+      "radius": 12,
+      "color": "#ffff00",
+      "projectileType": "normal",
+      "upgradeMultiplier": {
+        "damage": 1.2,
+        "range": 1.15,
+        "speed": 1.1
+      }
+    },
+    {
+      "id": "crystal_spire",
+      "name": "Crystal Spire",
+      "description": "Adds defensive bonuses to nearby towers",
+      "cost": 95,
+      "damage": 5,
+      "range": 200,
+      "attackSpeed": 0.4,
+      "radius": 12,
+      "color": "#00ffff",
+      "projectileType": "normal",
+      "upgradeMultiplier": {
+        "damage": 1.1,
+        "range": 1.2,
+        "speed": 1.05
+      }
+    },
+    {
+      "id": "meteor_strike",
+      "name": "Meteor Strike",
+      "description": "Rare powerful strikes with long cooldown",
+      "cost": 180,
+      "damage": 60,
+      "range": 300,
+      "attackSpeed": 0.2,
+      "radius": 13,
+      "color": "#ff6600",
+      "projectileType": "fire",
+      "upgradeMultiplier": {
+        "damage": 1.4,
+        "range": 1.25,
+        "speed": 1.4
+      }
+    },
+    {
+      "id": "void_sentinel",
+      "name": "Void Sentinel",
+      "description": "Removes small portions of enemy health instantly",
+      "cost": 160,
+      "damage": 20,
+      "range": 140,
+      "attackSpeed": 1.5,
+      "radius": 12,
+      "color": "#aa00ff",
+      "projectileType": "normal",
+      "upgradeMultiplier": {
+        "damage": 1.3,
+        "range": 1.08,
+        "speed": 1.25
+      }
+    }
+  ]
+}
