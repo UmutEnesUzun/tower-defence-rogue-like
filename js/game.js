@@ -38,6 +38,15 @@ class Game {
         this.particleEmitter = new ParticleEmitter();
         this.uiManager = new UIManager(this);
 
+        // Make commonly-used managers available on gameState so subsystems (like Tower)
+        // which receive only gameState can access them (e.g. this.gameState.projectileManager)
+        // This prevents "this.gameState.projectileManager is undefined" runtime errors.
+        this.gameState.projectileManager = this.projectileManager;
+        this.gameState.towerManager = this.towerManager;
+        this.gameState.enemyManager = this.enemyManager;
+        this.gameState.powerupManager = this.powerupManager;
+        this.gameState.particleEmitter = this.particleEmitter;
+
         // Game setup
         this.setupGame();
     }
