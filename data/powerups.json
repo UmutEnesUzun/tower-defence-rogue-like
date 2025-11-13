@@ -1,0 +1,445 @@
+{
+  "powerups": [
+    {
+      "id": "tower_damage_boost",
+      "name": "Tower Damage Boost",
+      "description": "All towers deal +1 damage permanently",
+      "value": 1,
+      "duration": null,
+      "rarity": "Common",
+      "color": "#ff6600"
+    },
+    {
+      "id": "gold_multiplier",
+      "name": "Gold Rush",
+      "description": "Double gold earned from enemies for 30 seconds",
+      "value": 2,
+      "duration": 30,
+      "rarity": "Rare",
+      "color": "#ffff00"
+    },
+    {
+      "id": "health_restore",
+      "name": "Restoration",
+      "description": "Restore 20 health immediately",
+      "value": 20,
+      "duration": null,
+      "rarity": "Common",
+      "color": "#00ff00"
+    },
+    {
+      "id": "critical_strike",
+      "name": "Critical Chance",
+      "description": "20% chance for double damage per shot",
+      "value": 0.2,
+      "duration": 45,
+      "rarity": "Uncommon",
+      "color": "#ff0000"
+    },
+    {
+      "id": "slow_enemies",
+      "name": "Time Warp",
+      "description": "Slow all enemies by 30% for 20 seconds",
+      "value": 0.7,
+      "duration": 20,
+      "rarity": "Uncommon",
+      "color": "#00ccff"
+    },
+    {
+      "id": "range_increase",
+      "name": "Extended Range",
+      "description": "All towers gain +30% range permanently",
+      "value": 0.3,
+      "duration": null,
+      "rarity": "Common",
+      "color": "#00aa00"
+    },
+    {
+      "id": "attack_speed_boost",
+      "name": "Haste",
+      "description": "All towers attack 25% faster permanently",
+      "value": 1.25,
+      "duration": null,
+      "rarity": "Uncommon",
+      "color": "#ffaaff"
+    },
+    {
+      "id": "gold_bonus",
+      "name": "Treasure Hunt",
+      "description": "Gain 100 gold immediately",
+      "value": 100,
+      "duration": null,
+      "rarity": "Common",
+      "color": "#ffff00"
+    },
+    {
+      "id": "health_max_increase",
+      "name": "Fortification",
+      "description": "Increase max health by 50",
+      "value": 50,
+      "duration": null,
+      "rarity": "Uncommon",
+      "color": "#00ff00"
+    },
+    {
+      "id": "armor_boost",
+      "name": "Iron Skin",
+      "description": "Reduce all incoming damage by 25% for 60 seconds",
+      "value": 0.75,
+      "duration": 60,
+      "rarity": "Rare",
+      "color": "#999999"
+    },
+    {
+      "id": "all_damage_boost",
+      "name": "Power Surge",
+      "description": "All towers deal +3 damage for 45 seconds",
+      "value": 3,
+      "duration": 45,
+      "rarity": "Rare",
+      "color": "#ff6600"
+    },
+    {
+      "id": "tower_cost_reduction",
+      "name": "Discount",
+      "description": "Next tower costs 20% less",
+      "value": 0.8,
+      "duration": null,
+      "rarity": "Uncommon",
+      "color": "#00ffff"
+    },
+    {
+      "id": "enemy_split",
+      "name": "Fission",
+      "description": "Enemies split into 2 weaker enemies when killed",
+      "value": 1,
+      "duration": null,
+      "rarity": "Legendary",
+      "color": "#ff00ff"
+    },
+    {
+      "id": "projectile_speed",
+      "name": "Acceleration",
+      "description": "Projectiles move 50% faster permanently",
+      "value": 1.5,
+      "duration": null,
+      "rarity": "Uncommon",
+      "color": "#ffff00"
+    },
+    {
+      "id": "bounty_boost",
+      "name": "Greed",
+      "description": "Enemy bounties increased by 50% permanently",
+      "value": 1.5,
+      "duration": null,
+      "rarity": "Rare",
+      "color": "#ffff00"
+    },
+    {
+      "id": "wave_slow",
+      "name": "Time Stop",
+      "description": "Enemy spawn rate reduced by 50% for 60 seconds",
+      "value": 0.5,
+      "duration": 60,
+      "rarity": "Rare",
+      "color": "#00ccff"
+    },
+    {
+      "id": "recall_tower",
+      "name": "Blueprint",
+      "description": "Next tower placement refunds 50% of cost",
+      "value": 0.5,
+      "duration": null,
+      "rarity": "Uncommon",
+      "color": "#0099ff"
+    },
+    {
+      "id": "enemy_weakness",
+      "name": "Weakness",
+      "description": "Enemies take +30% damage permanently",
+      "value": 1.3,
+      "duration": null,
+      "rarity": "Rare",
+      "color": "#ff0000"
+    },
+    {
+      "id": "gold_per_damage",
+      "name": "Bloodlust",
+      "description": "Gain 1 gold per 10 damage dealt permanently",
+      "value": 0.1,
+      "duration": null,
+      "rarity": "Legendary",
+      "color": "#ff0000"
+    },
+    {
+      "id": "tower_duplication",
+      "name": "Mirror",
+      "description": "Next tower placed is duplicated for free",
+      "value": 1,
+      "duration": null,
+      "rarity": "Legendary",
+      "color": "#00ffff"
+    },
+    {
+      "id": "crit_damage",
+      "name": "Devastating",
+      "description": "Critical strikes deal 3x damage instead of 2x",
+      "value": 3,
+      "duration": null,
+      "rarity": "Rare",
+      "color": "#ff6600"
+    },
+    {
+      "id": "tower_evolution",
+      "name": "Evolution",
+      "description": "All towers permanently gain +1 upgrade level",
+      "value": 1,
+      "duration": null,
+      "rarity": "Legendary",
+      "color": "#ff00ff"
+    },
+    {
+      "id": "free_upgrade",
+      "name": "Upgrade",
+      "description": "Free tower upgrade for your most expensive tower",
+      "value": 1,
+      "duration": null,
+      "rarity": "Uncommon",
+      "color": "#00ff00"
+    },
+    {
+      "id": "chain_reaction",
+      "name": "Chain Reaction",
+      "description": "Projectiles bounce between enemies 3 times",
+      "value": 3,
+      "duration": null,
+      "rarity": "Rare",
+      "color": "#ffff00"
+    },
+    {
+      "id": "piercing_shots",
+      "name": "Piercing",
+      "description": "Projectiles pass through all enemies permanently",
+      "value": 1,
+      "duration": null,
+      "rarity": "Rare",
+      "color": "#0099ff"
+    },
+    {
+      "id": "tower_aura",
+      "name": "Aura",
+      "description": "Towers buff each other within 200 range",
+      "value": 1.2,
+      "duration": null,
+      "rarity": "Legendary",
+      "color": "#00ffff"
+    },
+    {
+      "id": "respawn",
+      "name": "Second Wind",
+      "description": "Gain extra life - continue game if defeated once",
+      "value": 1,
+      "duration": null,
+      "rarity": "Legendary",
+      "color": "#ff00ff"
+    },
+    {
+      "id": "enemy_freeze",
+      "name": "Stasis",
+      "description": "Next fast enemy that reaches the end is frozen",
+      "value": 1,
+      "duration": null,
+      "rarity": "Rare",
+      "color": "#00eeff"
+    },
+    {
+      "id": "compound_interest",
+      "name": "Compound Interest",
+      "description": "Gain interest on gold: +1% per 10 seconds",
+      "value": 0.01,
+      "duration": null,
+      "rarity": "Rare",
+      "color": "#ffff00"
+    },
+    {
+      "id": "spectral_ammo",
+      "name": "Spectral Ammo",
+      "description": "Projectiles pass through 1 additional enemy",
+      "value": 1,
+      "duration": null,
+      "rarity": "Uncommon",
+      "color": "#ff00ff"
+    },
+    {
+      "id": "mass_production",
+      "name": "Mass Production",
+      "description": "Tower cost reduced by 15% permanently",
+      "value": 0.85,
+      "duration": null,
+      "rarity": "Uncommon",
+      "color": "#00ff00"
+    },
+    {
+      "id": "oversized_projectiles",
+      "name": "Oversized",
+      "description": "Projectiles are 2x larger and easier to hit with",
+      "value": 2,
+      "duration": null,
+      "rarity": "Uncommon",
+      "color": "#ffaaff"
+    },
+    {
+      "id": "ricochet",
+      "name": "Ricochet",
+      "description": "Projectiles bounce off walls and obstacles",
+      "value": 1,
+      "duration": null,
+      "rarity": "Rare",
+      "color": "#ffff00"
+    },
+    {
+      "id": "vulnerability",
+      "name": "Vulnerability",
+      "description": "Enemies have -20% armor permanently",
+      "value": 0.8,
+      "duration": null,
+      "rarity": "Uncommon",
+      "color": "#ff0000"
+    },
+    {
+      "id": "steady_aim",
+      "name": "Steady Aim",
+      "description": "Towers never miss their targets permanently",
+      "value": 1,
+      "duration": null,
+      "rarity": "Rare",
+      "color": "#0099ff"
+    },
+    {
+      "id": "tower_shield",
+      "name": "Tower Shield",
+      "description": "Towers gain 30% damage reduction permanently",
+      "value": 0.7,
+      "duration": null,
+      "rarity": "Uncommon",
+      "color": "#00aa00"
+    },
+    {
+      "id": "momentum",
+      "name": "Momentum",
+      "description": "Damage bonus increases by 1% per kill (max 50%)",
+      "value": 0.01,
+      "duration": null,
+      "rarity": "Legendary",
+      "color": "#ff6600"
+    },
+    {
+      "id": "reflection",
+      "name": "Reflection",
+      "description": "Enemies take 10% of their own damage as reflection",
+      "value": 0.1,
+      "duration": null,
+      "rarity": "Rare",
+      "color": "#ff00ff"
+    },
+    {
+      "id": "golden_touch",
+      "name": "Golden Touch",
+      "description": "Each tower generates 1 gold per second permanently",
+      "value": 1,
+      "duration": null,
+            "rarity": "Legendary",
+      "color": "#ffff00"
+    },
+    {
+      "id": "frenzy",
+      "name": "Frenzy",
+      "description": "Attack speed increases by 5% per enemy killed (max 100%)",
+      "value": 0.05,
+      "duration": null,
+      "rarity": "Legendary",
+      "color": "#ff0000"
+    },
+    {
+      "id": "sixth_sense",
+      "name": "Sixth Sense",
+      "description": "See and target enemies through walls temporarily",
+      "value": 1,
+      "duration": 45,
+      "rarity": "Rare",
+      "color": "#ff00ff"
+    },
+    {
+      "id": "shockwave",
+      "name": "Shockwave",
+      "description": "Every 5 kills, deal massive damage to all enemies",
+      "value": 5,
+      "duration": null,
+      "rarity": "Rare",
+      "color": "#ffff00"
+    },
+    {
+      "id": "symbiosis",
+      "name": "Symbiosis",
+      "description": "Towers near each other gain stacking bonuses",
+      "value": 1.1,
+      "duration": null,
+      "rarity": "Legendary",
+      "color": "#00ff00"
+    },
+    {
+      "id": "temporal_loop",
+      "name": "Temporal Loop",
+      "description": "Rewind time 5 seconds once if you're about to lose",
+      "value": 5,
+      "duration": null,
+      "rarity": "Legendary",
+      "color": "#00ccff"
+    },
+    {
+      "id": "last_stand",
+      "name": "Last Stand",
+      "description": "Towers gain +100% damage when health below 25%",
+      "value": 2,
+      "duration": null,
+      "rarity": "Rare",
+      "color": "#ff0000"
+    },
+    {
+      "id": "conversion",
+      "name": "Conversion",
+      "description": "Convert health into gold: 1 health = 1 gold",
+      "value": 1,
+      "duration": null,
+      "rarity": "Uncommon",
+      "color": "#ffff00"
+    },
+    {
+      "id": "amplification",
+      "name": "Amplification",
+      "description": "Each tower affects towers around it: +5% damage",
+      "value": 0.05,
+      "duration": null,
+      "rarity": "Uncommon",
+      "color": "#ff00ff"
+    },
+    {
+      "id": "sacrifice",
+      "name": "Sacrifice",
+      "description": "Remove one tower to double damage of all towers",
+      "value": 2,
+      "duration": null,
+      "rarity": "Rare",
+      "color": "#660000"
+    },
+    {
+      "id": "unity",
+      "name": "Unity",
+      "description": "All towers gain benefit of each other's upgrades",
+      "value": 1,
+      "duration": null,
+      "rarity": "Legendary",
+      "color": "#00ffff"
+    }
+  ]
+}

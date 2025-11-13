@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TD - Rogue-like</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/ui.css">
+</head>
+<body>
+    <div></div>
+    <div id="game-container">
+        <div id="game-header">
+            <div class="header-stat">
+                <span class="stat-label">Gold:</span>
+                <span id="gold-display" class="stat-value">0</span>
+            </div>
+            <div class="header-stat">
+                <span class="stat-label">Health:</span>
+                <span id="health-display" class="stat-value">100</span>
+            </div>
+            <div class="header-stat">
+                <span class="stat-label">Wave:</span>
+                <span id="wave-display" class="stat-value">0</span>
+            </div>
+            <div class="header-stat">
+                <span class="stat-label">Score:</span>
+                <span id="score-display" class="stat-value">0</span>
+            </div>
+            <div class="header-stat">
+                <span class="stat-label">Multiplier:</span>
+                <span id="multiplier-display" class="stat-value">1.0x</span>
+            </div>
+            <button id="pause-btn" class="control-btn">⏸ Pause</button>
+            <button id="menu-btn" class="control-btn">☰ Menu</button>
+        </div>
+
+        <canvas id="game-canvas"></canvas>
+
+        <div id="ui-overlay" class="hidden">
+            <!-- Tower Selection Panel -->
+            <div id="tower-panel" class="ui-panel hidden">
+                <div class="panel-header">
+                    <h2>Select Tower to Place</h2>
+                    <button class="close-btn">&times;</button>
+                </div>
+                <div id="tower-list" class="tower-list"></div>
+            </div>
+
+            <!-- Pause Menu -->
+            <div id="pause-menu" class="ui-panel hidden">
+                <div class="panel-header">
+                    <h2>Paused</h2>
+                </div>
+                <div class="menu-buttons">
+                    <button id="resume-btn" class="menu-btn">Resume</button>
+                    <button id="settings-btn" class="menu-btn">Settings</button>
+                    <button id="menu-exit-btn" class="menu-btn">Main Menu</button>
+                </div>
+            </div>
+
+            <!-- Main Menu -->
+            <div id="main-menu" class="ui-panel hidden">
+                <div class="panel-header">
+                    <h2>Tower Defence</h2>
+                </div>
+                <div class="menu-buttons">
+                    <button id="start-game-btn" class="menu-btn">Start New Run</button>
+                    <button id="high-scores-btn" class="menu-btn">High Scores</button>
+                    <button id="settings-main-btn" class="menu-btn">Settings</button>
+                </div>
+            </div>
+
+            <!-- Power-up Selection -->
+            <div id="powerup-panel" class="ui-panel hidden">
+                <div class="panel-header">
+                    <h2>Choose Power-up</h2>
+                </div>
+                <div id="powerup-list" class="powerup-list"></div>
+            </div>
+
+            <!-- Game Over Screen -->
+            <div id="gameover-screen" class="ui-panel hidden">
+                <div class="panel-header">
+                    <h2>Game Over</h2>
+                </div>
+                <div class="gameover-stats">
+                    <div class="stat-row">
+                        <span>Final Score:</span>
+                        <span id="final-score">0</span>
+                    </div>
+                    <div class="stat-row">
+                        <span>Wave Reached:</span>
+                        <span id="final-wave">0</span>
+                    </div>
+                    <div class="stat-row">
+                        <span>Enemies Defeated:</span>
+                        <span id="final-kills">0</span>
+                    </div>
+                    <div class="stat-row">
+                        <span>Total Gold Earned:</span>
+                        <span id="final-gold">0</span>
+                    </div>
+                </div>
+                <div class="menu-buttons">
+                    <button id="restart-btn" class="menu-btn">Play Again</button>
+                    <button id="menu-main-btn" class="menu-btn">Main Menu</button>
+                </div>
+            </div>
+
+            <!-- Settings Panel -->
+            <div id="settings-panel" class="ui-panel hidden">
+                <div class="panel-header">
+                    <h2>Settings</h2>
+                    <button class="close-btn">&times;</button>
+                </div>
+                <div class="settings-content">
+                    <label class="setting-item">
+                        <span>Master Volume</span>
+                        <input type="range" id="volume-slider" min="0" max="100" value="50">
+                    </label>
+                    <label class="setting-item">
+                        <span>Graphics Quality</span>
+                        <select id="graphics-select">
+                            <option value="low">Low</option>
+                            <option value="medium" selected>Medium</option>
+                            <option value="high">High</option>
+                        </select>
+                    </label>
+                    <label class="setting-item">
+                        <input type="checkbox" id="show-fps" checked>
+                        <span>Show FPS</span>
+                    </label>
+                </div>
+                <div class="menu-buttons">
+                    <button class="menu-btn close-settings">Close</button>
+                </div>
+            </div>
+
+            <!-- Tower Info Tooltip -->
+            <div id="tower-tooltip" class="tooltip hidden">
+                <div class="tooltip-header">
+                    <h3 id="tooltip-name"></h3>
+                </div>
+                <div class="tooltip-content">
+                    <p id="tooltip-description"></p>
+                    <div class="tooltip-stats">
+                        <div>Range: <span id="tooltip-range"></span></div>
+                        <div>Damage: <span id="tooltip-damage"></span></div>
+                        <div>Attack Speed: <span id="tooltip-attackspeed"></span></div>
+                        <div>Cost: <span id="tooltip-cost"></span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Active Run Info -->
+        <div id="run-info" class="run-info hidden">
+            <div class="run-powerups-title">Active Effects:</div>
+            <div id="active-powerups" class="active-powerups"></div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="js/utils.js"></script>
+    <script src="js/camera.js"></script>
+    <script src="js/projectiles.js"></script>
+    <script src="js/towers.js"></script>
+    <script src="js/enemies.js"></script>
+    <script src="js/powerups.js"></script>
+    <script src="js/ui.js"></script>
+    <script src="js/game.js"></script>
+</body>
+</html>

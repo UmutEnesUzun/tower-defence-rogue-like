@@ -1,0 +1,30 @@
+{
+  "gameBalance": {
+    "initialGold": 500,
+    "initialHealth": 100,
+    "maxHealth": 200,
+    "goldPerKill": 1,
+    "scorePerKill": 1,
+    "difficultyMultiplierPerWave": 1.05,
+    "enemySpawnRateMin": 0.5,
+    "enemySpawnRateMax": 5,
+    "powerUpDropChance": 0.1,
+    "powerUpSelectionFrequency": 5,
+    "gridSize": 20,
+    "cameraZoomMin": 0.5,
+    "cameraZoomMax": 3,
+    "defaultCameraZoom": 1
+  },
+  "towerBalancing": {
+    "damageMod": 1,
+    "rangeMod": 1,
+    "speedMod": 1,
+    "costMod": 1
+  },
+  "enemyBalancing": {
+    "healthMod": 1,
+    "speedMod": 1,
+    "armorMod": 1,
+    "bountyMod": 1
+  }
+}
